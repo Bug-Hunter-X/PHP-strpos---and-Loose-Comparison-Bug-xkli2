@@ -1,0 +1,3 @@
+This repository demonstrates a common but subtle bug in PHP related to the `strpos()` function and loose comparisons. The issue arises because `strpos()` returns `false` when the needle is not found, but `false` also evaluates to 0 in a loose comparison.  This can lead to incorrect results, especially when the needle is at the beginning of the haystack.
+
+The `bug.php` file contains the erroneous code. The `bugSolution.php` file provides the corrected version using strict comparison (===).
